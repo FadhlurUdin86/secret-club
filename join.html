@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pendaftaran - Klub Detektif Rahasia</title>
+</head>
+<body>
+    <header>
+        <h1>MARKAS BESAR KLUB DETEKTIF RAHASIA</h1>
+        <nav>
+            <a href="index.html">Beranda</a> |
+            <a href="members.html">Daftar Agen</a> |
+            <a href="mission.html">Misi & Galeri</a> |
+            <a href="join.html">Gabung Klub</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h2>Formulir Rekrutmen Agen Baru</h2>
+        <p>Isi data diri di bawah ini jika kamu siap menjalankan misi rahasia:</p>
+
+        <!-- Form Sesuai Modul #11 -->
+        <form action="#" method="get">
+            <fieldset>
+                <legend><strong>Biodata Calon Anggota</strong></legend>
+                
+                <p>
+                    <label for="nama">Nama Lengkap:</label><br>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama kamu" required>
+                </p>
+
+                <p>
+                    <label for="sandi">Nama Sandi / Julukan:</label><br>
+                    <input type="text" id="sandi" name="sandi" placeholder="Contoh: Tiger-X" required>
+                </p>
+
+                <p>
+                    <label for="tgl">Tanggal Lahir:</label><br>
+                    <input type="date" id="tgl" name="tgl_lahir">
+                </p>
+
+                <p>
+                    <label>Pilihan Divisi Minat:</label><br>
+                    <input type="radio" id="div1" name="divisi" value="lapangan">
+                    <label for="div1">Penyelidik Lapangan</label><br>
+                    <input type="radio" id="div2" name="divisi" value="kode">
+                    <label for="div2">Pemecah Kode & Sandi</label><br>
+                    <input type="radio" id="div3" name="divisi" value="logistik">
+                    <label for="div3">Perlengkapan & Intel</label>
+                </p>
+
+                <p>
+                    <label for="alasan">Kenapa Kamu Ingin Bergabung?</label><br>
+                    <textarea id="alasan" name="alasan" rows="4" cols="40" placeholder="Tuliskan kemampuan tersembunyi kamu..."></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="setuju" name="setuju" required>
+                    <label for="setuju">Saya berjanji akan menjaga kerahasiaan klub ini!</label>
+                </p>
+
+                <p>
+                    <button type="submit">Kirim Berkas Pendaftaran</button>
+                    <button type="reset">Reset Formulir</button>
+                </p>
+            </fieldset>
+        </form>
+    </main>
+    <hr>
+
+    <footer>
+        <p><small>&copy; 2026 Klub Detektif Rahasia.</small></p>
+    </footer>
+</body>
+</html>
